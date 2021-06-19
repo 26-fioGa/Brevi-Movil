@@ -6,15 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:gravity="center_vertical"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/imageHeader"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_alignParentTop="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/loginimage" />
+    tools:context=".Register">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-light"
-            android:text="¡BIENVENIDO DE NUEVO!"
+            android:text="¡BIENVENIDO A BREVI!"
             android:textColor="@color/purple_200"
             android:textSize="30sp"
             android:textStyle="normal" />
@@ -40,9 +32,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Inicia sesión con tu cuenta de Brevi"
+            android:text="Estás a punto de formar parte de Brevi"
             android:textColor="#959595"
             android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edit_text_border"
+            android:drawableLeft="@drawable/person"
+            android:hint=" Introduzca su nombre"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -64,23 +66,34 @@
             android:hint=" Introduzca su contraseña"
             android:paddingLeft="20dp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edit_text_border"
+            android:drawableLeft="@drawable/ic_lock"
+            android:inputType="textPassword"
+            android:hint=" Vuelva a introducir su contraseña"
+            android:paddingLeft="20dp" />
+
         <Button
-            android:id="@+id/btnIngresar"
+            android:id="@+id/btnRegistrarse"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/bg_btn_login"
-            android:text="Ingresar"
+            android:text="Registrarse"
             android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_700" />
 
         <Button
-            android:id="@+id/btnRegistrar"
+            android:id="@+id/btnIniciarSesion"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_btn_register"
-            android:text="Crear cuenta"
+            android:text="Iniciar Sesión"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:backgroundTint="@color/purple_200" />
@@ -89,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Si eres nuevo aquí, crea una cuenta nueva"
+            android:text="¿Ya tienes una cuenta? Inicia Sesión"
             android:textColor="#959595"
             android:textSize="14sp" />
 
