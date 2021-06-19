@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/locations"
+        android:icon="@drawable/ic_location"
+        android:title="Ubicaciones"/>
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_route"
+        android:title="Mapa"/>
+    <item
+        android:id="@+id/routes"
+        android:icon="@drawable/ic_bus"
+        android:title="Rutas"/>
+
+</menu>

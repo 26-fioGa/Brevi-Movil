@@ -11,7 +11,7 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         btnRegistrarse.setOnClickListener() {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,App::class.java)
             startActivity(intent)
         }
 

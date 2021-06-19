@@ -17,11 +17,12 @@ import kotlin.concurrent.thread
 class MainActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Brevi)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnIngresar.setOnClickListener(){
-            val intent = Intent(this,Home::class.java)
+            val intent = Intent(this,App::class.java)
             startActivity(intent)
         }
 

@@ -12,23 +12,24 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import kotlin.concurrent.thread
 
-class Home : AppCompatActivity(), OnMapReadyCallback {
+class Home : AppCompatActivity(){
 
-    private lateinit var map:GoogleMap
+    /*private lateinit var map:GoogleMap
 
     companion object {
         const val REQUEST_CODE_LOCATION = 0
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(1000)
+
+        //setSupportActionBar(findViewById(R.id.mitoolbar))
         setTheme(R.style.Brevi)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        createFragment()
+        //createFragment()
     }
 
-    private fun createFragment() {
+    /*private fun createFragment() {
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
@@ -87,7 +88,7 @@ class Home : AppCompatActivity(), OnMapReadyCallback {
             Toast.makeText(this, "Para activar la localización ve a ajustes y acepta los permisos",
                     Toast.LENGTH_SHORT).show()
         }
-    }
+    }*/
 
 
 }
