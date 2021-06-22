@@ -10,6 +10,7 @@ class App : AppCompatActivity() {
     private val locationsFragment = Locations()
     private val mapsFragment = Map()
     private val routesFragment = Routes()
+    private val profileFragment = Profile()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,7 @@ class App : AppCompatActivity() {
                 R.id.locations -> replaceFragment(locationsFragment)
                 R.id.map -> replaceFragment(mapsFragment)
                 R.id.routes -> replaceFragment(routesFragment)
+                R.id.profile -> replaceFragment(profileFragment)
             }
             true
         }

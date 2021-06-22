@@ -12,5 +12,9 @@
         android:id="@+id/routes"
         android:icon="@drawable/ic_bus"
         android:title="Rutas"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Perfil"/>
 
 </menu>
